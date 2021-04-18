@@ -23,10 +23,10 @@ const Navbar = () => {
               <a class="nav-link mr-5 text-white" href="#" >Reviews</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mr-5 text-white" href="#" >Contract Us</a>
+              <a class="nav-link mr-5 text-white" href="/dashboard" >Admin</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mr-5 text-white" href="#" >Login</a>
+              <a class="nav-link mr-5 text-white" href="/login" >Login</a>
             </li>
           </ul>
          

@@ -5,6 +5,7 @@ import FeatureService from '../FeaturedService/FeaturedService';
 import Footer from '../Footer/Footer';
 import HeaderMain from '../HeaderMain/HeaderMain';
 import Navbar from '../Navbar/Navbar';
+
 import Services from '../Services/Services';
 import Testimonial from '../Testimonial/Testimonial';
 
@@ -17,9 +18,13 @@ const Header = () => {
             <HeaderMain/>
             <BusinessInfo/>
             <Services/>
+           
             <FeatureService/>
             <Testimonial/>
             <Blog/>
+           
+          
+          
             <Footer/>
           
         </div>

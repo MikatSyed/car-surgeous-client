@@ -1,24 +1,14 @@
-import React from 'react';
-import image1 from '../../../Image/download (1).jpg';
-import image2 from '../../../Image/download (2).jpg';
-import image3 from '../../../Image/Belts-and-Hoses-Maintenance-Part.jpg';
+import React, { useEffect, useState } from 'react';
 import ServiceDetails from '../ServiceDetails/ServiceDetails';
 
-const serviceData = [
-    {
-        name:'ENGINE DIAGNOSTICS',
-        img: image1
-    },
-    {
-        name:'LUBE, OIL AND FILTERS',
-        img: image2
-    },
-    {
-        name:'BELTS AND HOSES',
-        img: image3
-    }
-]
+
 const Services = () => {
+    const [services,setServices] = useState([]);
+useEffect(()=> {
+    fetch('http://localhost:8000/events')
+    .then(res => res.json())
+    .then(data =>setServices(data))
+},[])
     return (
         <section>
 
@@ -31,7 +21,7 @@ const Services = () => {
           <div className="row w-75 mt-5 pt-5">
                
            {
-               serviceData.map(service => <ServiceDetails service={service}/>)
+               services.map(service => <ServiceDetails service={service}/>)
            }
           </div>
        </div>
