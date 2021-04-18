@@ -22,7 +22,7 @@ const Header = () => {
             <FeatureService/>
             <Testimonial/>
             <Blog/>
-           <MakeAdmin/>
+          
           
           
             <Footer/>
