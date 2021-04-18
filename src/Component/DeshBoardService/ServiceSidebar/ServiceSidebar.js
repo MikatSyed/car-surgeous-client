@@ -35,7 +35,7 @@ const ServiceSidebar = () => {
                 </li>
                  <div>
                     <li>
-                        <Link to="/" className="text-white">
+                        <Link to="/book" className="text-white">
                             <FontAwesomeIcon icon={faFill} /> <span>Book</span>
                         </Link>
                     </li>

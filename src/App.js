@@ -13,6 +13,7 @@ import DeshboardService from './Component/DeshBoardService/DeshboardService/Desh
 import Review from './Component/DeshBoardService/Review/Review';
 import PrivateRoute from './Component/Login/PrivateRoute/PrivateRoute';
 import ServiceDetails from './Component/Home/ServiceDetails/ServiceDetails';
+import Book from './Component/DeshBoardService/Book/Book';
 
 
 
@@ -54,6 +55,10 @@ function App() {
           
           <Route  path="/review">
             <Review/>
+          </Route>
+
+          <Route  path="/book">
+            <Book/>
           </Route>
 
          
