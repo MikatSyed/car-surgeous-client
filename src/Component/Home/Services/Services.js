@@ -5,7 +5,7 @@ import ServiceDetails from '../ServiceDetails/ServiceDetails';
 const Services = () => {
     const [services,setServices] = useState([]);
 useEffect(()=> {
-    fetch('http://localhost:8000/events')
+    fetch('https://fast-mesa-06149.herokuapp.com/events')
     .then(res => res.json())
     .then(data =>setServices(data))
 },[])

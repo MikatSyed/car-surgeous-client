@@ -1,9 +1,9 @@
-const firebaseConfig = {
-    apiKey: "AIzaSyBBt4S6UNOERRy4cfsCLNl4dAxEalE36OI",
-    authDomain: "login-86ebd.firebaseapp.com",
-    projectId: "login-86ebd",
-    storageBucket: "login-86ebd.appspot.com",
-    messagingSenderId: "692142368374",
-    appId: "1:692142368374:web:2d279587b0077f42af2157"
-  };
+var firebaseConfig = {
+  apiKey: "AIzaSyAFUw-x6-PFrehg4BJY-SXbrkWLnlhhF5I",
+  authDomain: "car-surgeous.firebaseapp.com",
+  projectId: "car-surgeous",
+  storageBucket: "car-surgeous.appspot.com",
+  messagingSenderId: "886694600748",
+  appId: "1:886694600748:web:d24c2613350df757d6b189"
+};
   export default firebaseConfig;
