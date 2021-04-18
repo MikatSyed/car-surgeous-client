@@ -40,7 +40,7 @@ const ServiceSidebar = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link to="/addservice" className="text-white">
+                        <Link to="/" className="text-white">
                             <FontAwesomeIcon icon={faListAlt} /> <span>Booklist</span>
                         </Link>
                     </li>
