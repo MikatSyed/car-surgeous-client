@@ -14,6 +14,7 @@ import Review from './Component/DeshBoardService/Review/Review';
 import PrivateRoute from './Component/Login/PrivateRoute/PrivateRoute';
 import MakeAdmin from './Component/DashBoard/MakeAdmin/MakeAdmin';
 import Book from './Component/DeshBoardService/Book/Book';
+import BookList from './Component/DeshBoardService/BookList/BookList'
 
 
 
@@ -25,8 +26,10 @@ function App() {
   return (
     
        <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
+        
    <Router>
       <Switch>
+        
           <Route exact path="/">
             <Home/>
           </Route>
@@ -40,9 +43,11 @@ function App() {
          <DeshboardService/>
           </PrivateRoute>
 
+        
 
-
-
+          <PrivateRoute  path="/booklist/:id">
+            <BookList/>
+          </PrivateRoute>
          
 
           
