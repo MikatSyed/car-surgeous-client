@@ -12,9 +12,9 @@ import AddService from './Component/DashBoard/AddService/AddService';
 import DeshboardService from './Component/DeshBoardService/DeshboardService/DeshboardService';
 import Review from './Component/DeshBoardService/Review/Review';
 import PrivateRoute from './Component/Login/PrivateRoute/PrivateRoute';
-import ServiceDetails from './Component/Home/ServiceDetails/ServiceDetails';
-import Book from './Component/DeshBoardService/Book/Book';
 import MakeAdmin from './Component/DashBoard/MakeAdmin/MakeAdmin';
+import Book from './Component/DeshBoardService/Book/Book';
+
 
 
 
@@ -41,9 +41,6 @@ function App() {
           </PrivateRoute>
 
 
-          {/* <PrivateRoute path="/serviceDetails">
-         <ServiceDetails/>
-          </PrivateRoute> */}
 
 
          

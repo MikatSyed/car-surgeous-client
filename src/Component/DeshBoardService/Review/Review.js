@@ -52,7 +52,7 @@ const Review = () => {
 
 
              <form onSubmit={handleSubmit(onSubmit)}>
-      <label htmlFor="exampleInputEmail1">Service Title</label><br/>
+      <label htmlFor="exampleInputEmail1">Name</label><br/>
       <input  {...register("name")} className="form-control" /><br/>
       <label htmlFor="exampleInputEmail1">Description</label><br/>
       <input  {...register("description")} className="form-control" /><br/>
