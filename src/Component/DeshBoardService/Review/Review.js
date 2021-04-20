@@ -15,7 +15,7 @@ const Review = () => {
             // imageURL: imageURL
          
         };
-        const url = `http://localhost:8000/addReview`
+        const url = `https://fast-mesa-06149.herokuapp.com/addReview`
       console.log(evenData);
         fetch(url,{
             method: 'POST',
