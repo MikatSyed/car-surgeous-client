@@ -14,6 +14,7 @@ const ProcessPayment = () => {
         
         <Elements stripe={stripePromise}>
             <SimpleCardForm ></SimpleCardForm>
+         
         </Elements>
         
     );

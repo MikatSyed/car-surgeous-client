@@ -16,7 +16,7 @@ const AddProduct = () => {
             // imageURL: imageURL
          
         };
-        const url = `http://localhost:8000/addElement`
+        const url = `'https://fast-mesa-06149.herokuapp.com/addElement`
       console.log(evenData);
         fetch(url,{
             method: 'POST',

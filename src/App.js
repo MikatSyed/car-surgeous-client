@@ -15,6 +15,7 @@ import PrivateRoute from './Component/Login/PrivateRoute/PrivateRoute';
 import MakeAdmin from './Component/DashBoard/MakeAdmin/MakeAdmin';
 import Book from './Component/DeshBoardService/Book/Book';
 import BookList from './Component/DeshBoardService/BookList/BookList'
+import ManageService from './Component/DashBoard/ManageService/ManageService';
 
 
 
@@ -68,7 +69,9 @@ function App() {
             <MakeAdmin/>
           </Route>
 
-
+          <Route path="/manage">
+            <ManageService/>
+          </Route>
          
           <Route  path="/login">
            <Login/>

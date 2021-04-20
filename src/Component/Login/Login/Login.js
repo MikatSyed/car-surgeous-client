@@ -21,7 +21,7 @@ const Login = () => {
     firebase.auth().signInWithPopup(provider).then(function (result) {
       const { displayName, email } = result.user;
       const signedInUser = { name: displayName, email }
-    //   setLoggedInUser(signedInUser);
+      setLoggedInUser(signedInUser);
       storeAuthToken();
     }).catch(function (error) {
       const errorMessage = error.message;

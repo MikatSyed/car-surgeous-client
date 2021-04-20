@@ -18,7 +18,9 @@ const BookList = () => {
         // axios.get(`https://arcane-atoll-67843.herokuapp.com/events/${productId}`).then(res => {
         //     setCheckout(res.data)
         //     console.log(checkout)
+        // fetch(`https://fast-mesa-06149.herokuapp.com/events/${id}`)
         fetch(`https://fast-mesa-06149.herokuapp.com/events/${id}`)
+
         .then(res=> res.json())
         .then(data => {
            setCheckout(data)

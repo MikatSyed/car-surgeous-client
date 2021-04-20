@@ -5,7 +5,7 @@ import FeatureService from '../FeaturedService/FeaturedService';
 import Footer from '../Footer/Footer';
 import HeaderMain from '../HeaderMain/HeaderMain';
 import Navbar from '../Navbar/Navbar';
-import MakeAdmin from '../../DashBoard/MakeAdmin/MakeAdmin'
+import Admin from '../Admin/Admin'
 import Services from '../Services/Services';
 import Testimonial from '../Testimonial/Testimonial';
 
@@ -22,7 +22,7 @@ const Header = () => {
             <FeatureService/>
             <Testimonial/>
             <Blog/>
-          
+            <Admin/>
           
           
             <Footer/>

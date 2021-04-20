@@ -10,15 +10,7 @@ const ServiceSidebar = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     const [isDoctor, setIsDoctor] = useState(false);
 
-    // useEffect(() => {
-    //     fetch('https://salty-plateau-71286.herokuapp.com/isDoctor', {
-    //         method: 'POST',
-    //         headers: { 'content-type': 'application/json' },
-    //         body: JSON.stringify({ email: loggedInUser.email })
-    //     })
-    //         .then(res => res.json())
-    //         .then(data => setIsDoctor(data));
-    // }, [])
+    
 
     return (
         <div className="sidebar d-flex flex-column justify-content-between col-md-2 col-sm-12 py-5 px-4" style={{ height: "100vh" }}>
@@ -39,11 +31,7 @@ const ServiceSidebar = () => {
                             <FontAwesomeIcon icon={faFill} /> <span>Book</span>
                         </Link>
                     </li>
-                    <li>
-                        <Link to="/booklist/:id" className="text-white">
-                            <FontAwesomeIcon icon={faListAlt} /> <span>Booklist</span>
-                        </Link>
-                    </li>
+                  
                     <li>
                         <Link to="/review" className="text-white">
                             <FontAwesomeIcon icon={faStreetView} /> <span>Review</span>

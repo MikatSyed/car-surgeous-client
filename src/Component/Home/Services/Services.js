@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
+
 import ServiceDetails from '../ServiceDetails/ServiceDetails';
 
 
 const Services = () => {
     const [services,setServices] = useState([]);
 useEffect(()=> {
+    // fetch('https://fast-mesa-06149.herokuapp.com/events')
     fetch('https://fast-mesa-06149.herokuapp.com/events')
     .then(res => res.json())
     .then(data =>setServices(data))
@@ -23,6 +25,7 @@ useEffect(()=> {
            {
                services.map(service => <ServiceDetails service={service}/>)
            }
+           
           </div>
        </div>
 
